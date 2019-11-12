@@ -190,7 +190,10 @@ while running:
 
                 elif item_chosen.type == "back":
                     continue
-
+                    
+        if len(enemies) == 0:
+            print(bcolors.OKBLUE + "You win!" + bcolors.END)
+            running = False
 
         print("================")
         print(bcolors.BOLD + bcolors.OKGREEN + "NAME                   " + "HP" + bcolors.OKBLUE
